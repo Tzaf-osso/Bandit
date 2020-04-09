@@ -1,3 +1,8 @@
-this is the solution of stage 1
+This is the solution of stage 1
 
-password:121212ffdfffr
+in the home directory use - ls
+find the file readme
+cat readme
+
+password: 
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1

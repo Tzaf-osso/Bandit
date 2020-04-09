@@ -1,0 +1,13 @@
+This is the solution of stage 2
+
+in the home directory use - ls
+find the file spaces in this filename
+we need to use '\' because there is spaces in filename
+
+the solution:
+
+1) cat spaces\ in\ this\ filename
+
+password: 
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+

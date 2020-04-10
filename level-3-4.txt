@@ -1,13 +1,18 @@
-This is the solution of stage 2
+This is the solution of stage 4
 
 in the home directory use - ls
-find the file spaces in this filename
-we need to use '\' because there is spaces in filename
+find "inhere"
+use cd inhere/
+use ls -a to see the hidden file
+read the file .hidden
 
 the solution:
 
-1) cat spaces\ in\ this\ filename
+1) ls
+2)cd inhere/
+3)ls -a
+4)cat .hidden
 
 password: 
-UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 

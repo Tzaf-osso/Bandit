@@ -1,0 +1,20 @@
+This is the solution of stage 4
+
+in the home directory use - ls
+find "inhere"
+use cd inhere/
+use ls to see the files
+use file cmd to find the types of the files
+read the ASCII text file -file07
+
+the solution:
+
+1) ls
+2)cd inhere/
+3)ls
+4)file ./*
+5)cat ./-file07
+
+password: 
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+

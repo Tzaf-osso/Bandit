@@ -1,0 +1,21 @@
+This is the solution of stage 5
+
+in the home directory use - ls
+find "inhere"
+use cd inhere/
+use ls to see the files
+we need to search for a human readable file, that is 1033 bytes, and is not executable.
+To do this we need to use the find command with some options
+
+the solution:
+
+1) ls
+2)cd inhere/
+3)ls
+4)find -readable – size 1033c ! -executable
+5)cat ./maybehere07/.file2
+
+password: 
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+

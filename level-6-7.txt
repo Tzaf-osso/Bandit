@@ -1,0 +1,18 @@
+This is the solution of stage 6
+
+we need to use find command to find:
+1)user, which defines the file owner, bandit7
+2)group, which defines the file group, bandit6 in this case
+3)size, which defines the size of the file. 33c means 33 bytes of character
+we need to search the file in the root directory with /
+To do this we need to use the find command with some options
+
+the solution:
+
+1)find / -user bandit7 -group bandit6 -size 33c -type f 2>/dev/null
+2)cat /var/lib/dpkg/info/bandit7.password
+
+password: 
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+

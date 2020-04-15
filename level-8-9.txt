@@ -1,0 +1,13 @@
+This is the solution of stage 8
+
+we need to find the only line of text that occurs only once
+
+the solution:
+
+1)ls
+2) sort data.txt | uniq -u
+
+password: 
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+

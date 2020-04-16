@@ -1,0 +1,13 @@
+This is the solution of stage 9
+
+The password for the next level is stored in the file data.txt in one of the few human-readable strings, beginning with several ‘=’ characters.
+When we look the text after strings data.txt | grep "="
+we can see clearly the password
+
+the solution:
+
+1)ls
+2) strings data.txt | grep "="
+
+password: 
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk

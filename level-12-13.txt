@@ -1,0 +1,35 @@
+This is the solution of stage 12
+
+The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed
+
+יש קובץ HEX-DUMP שצריך לעשות לו שחזור, יש פקודה xxd שעוזזרת לעבוד עם קבצים מסוג אלה. נשתמש באופציה מינוס R
+וניצור קובץ בינארי.
+נבדוק את סוג הקובץ שנוצר, data1 באמצעות הפקודת file ונגלה שסוג הקובץ הוא  gzip compressed data
+בשביל לחלץ את הקובץ נשתמש בפקודה zcat ונחלץ לקובץ data2.
+באמצעות file נראה כי סוג הקובץ הוא  bzip2 compressed data, נשתמש בפקודה bzcat לחלץ לקובץ data3
+באמצעות file נראה כי סוג הקובץ הוא  gzip compressed data,, נשתמש בפקודה zcat לחלץ לקובץ data4
+באמצעות file נראה כי סוג הקובץ הוא  POSIX tar archive נחפש בגוגל ונראה שכדי לחלץ קובץ מסוג זה נשתמש בפקודה tar ובאופציה מינוס xvf ונקבל קובץ בינארי מחולץ בשם data5 
+באמצעות file נראה כי סוג הקובץ הוא  POSIX tar archive  נשתמש בפקודה tar ובאופציה מינוס xvf ונקבל קובץ בינארי מחולץ בשם data6
+באמצעות file נראה כי סוג הקובץ הוא bzip2 compressed data  נשתמש בפקודה bzcat לחלץ לקובץ data7
+באמצעות file נראה כי סוג הקובץ הוא  POSIX tar archive  נשתמש בפקודה tar ובאופציה מינוס xvf ונקבל קובץ בינארי מחולץ בשם data8
+באמצעות file נראה כי סוג הקובץ הוא  gzip compressed data,, נשתמש בפקודה zcat לחלץ לקובץ data9
+באמצעות file נראה כי סוג הקובץ הוא ASCII text  
+the solution:
+
+1)ls
+2)cat data.txt | tr a-zA-Z n-za-mN-ZA-M
+3) xxd -r mytest.txt > data1
+4) zcat data1 > data2
+5) bzcat data2 > data3
+6) zcat data3 > data4
+7) tar -xvf data4
+8) tar -xvf data5.bin
+9) bzcat data6.bin > data7
+10) tar -xvf data7
+11) zcat data8.bin > data9
+12) cat data9
+
+
+
+password: 
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL

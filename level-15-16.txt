@@ -1,0 +1,17 @@
+This is the solution of stage 15
+
+The password for the next level can be retrieved by submitting
+the password of the current level to port 30001 on localhost
+using SSL encryption.
+
+
+צריך להתחבר לפורט 30001 עם הסיסמא הנוכחית באמצעות הצפנת SSL.
+מקריאה באינטרנט על SSL ולינוקס ניתן לראות שיש פקודה בשם openssl שניתן להשתמש בה.
+באמצעות הפקודה s_client ניתן ליצור חיבור לשרת מרוחק כך שנצטרך להשתמש בפקודה הזאת
+
+1)openssl s_client -connect localhost:30001
+2) paste the password from prev level
+
+
+password: 
+cluFn7wTiGryunymYOu4RcffSxQluehd

@@ -1,0 +1,12 @@
+This is the solution of stage 14
+
+The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. Note: localhost is a hostname that refers to the machine you are working on
+
+צריך להתחבר לפורט 3000 עם הסיסמא הנוכחית. מחיפוש ברשת ניתן לראות שאפשר להשתמש בפקודה nc.
+
+1)nc localhost 30000 
+2) paste the password 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+
+password: 
+BfMYroe26WYalil77FoDi9qh59eK5xNr

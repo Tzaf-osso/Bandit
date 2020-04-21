@@ -1,0 +1,32 @@
+This is the solution of stage 16
+
+The password for the next level can be retrieved by submitting
+the password of the current level to port 30001 on localhost
+using SSL encryption.
+
+
+תחילה צריך לסרוק ולראות איזה פורטים פעילים. מחיפוש באינטרנט מצאתי שאפשר להשתמש בפקודה nmap בצורה הבאה
+nmap -p 31000-32000 localhost
+נקבל 2 פורטים פתוחים ולאחר מכן נבדוק על כל פורט בנפרד אם הוא מתחבר באמצעות השורה הבאה
+openssl s_client -connect localhost:
+אנו רואים כי פורט 31790 הוא הפורט שמגיב לנו.
+נדביק את הסיסמא של השלב הקודם ונקבל RSA PRIVATE KEY
+נדביק את ה-RSA בקובץ ונפעל כמו שהיה בתרגיל 13.
+נשמתש בפקודה ssh -i .
+ניתן שלאחר שמנסים להתחבר לbandit17 מקבלים שגיאה.
+It is required that your private key files are NOT accessible by others. This private key will be ignored.
+מקריאה בגוגל הבנתי שצריך לתת הרשאות לקובץ שיהיה קריאה בלבד אז נתתי לו הרשאות באמצעות chmod 400
+ולאחר מכן אפשר להתחבר לשלב 17.
+
+1)onmap -p 31000-32000 localhost
+2)openssl s_client -connect localhost:(for the 2 ports that we found)
+3)paste the password cluFn7wTiGryunymYOu4RcffSxQluehd
+4)find the RSA PRIVATE KEY
+5)copy the RSA PRIVATE KEY to file (tzaf.key) -> 
+		*cd /tmp
+		* touch tzaf.key
+		* vim tzaf.key and paste RSA PRIVATE KEY
+6) chmod 400 tzaf.key
+7) ssh -i tzaf.key bandit17@localhost
+
+

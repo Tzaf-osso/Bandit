@@ -1,0 +1,11 @@
+This is the solution of stage 17
+There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.newand is the only line that has been changed between passwords.old and passwords.new
+
+מהכרות עם לינוקס אני יודע שאפשר לעשות את זה עם פקודת diff
+בין 2 הקבצים
+
+1)diff passwords.old passwords.new
+
+Password: 
+kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+

@@ -1,0 +1,19 @@
+This is the solution of stage 19
+
+To gain access to the next level, you should use the setuid binary
+ in the homedirectory. Execute it without arguments to find out how to use it.
+ The password for this level can be found in the usual place (/etc/bandit_pass),
+ after you have used the setuid binary
+
+נעשה file ונראה שסוג הקובץ הוא setuid ELF 32-bit LSB executable
+רשום שנריץ את הקובץ ונראה כיצד להשתמש בו ונקבל
+Run a command as another user.
+  Example: ./bandit20-do id
+
+1)./bandit20-do
+2)./bandit20-do cat /etc/bandit_pass/bandit20
+
+Password: 
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+

@@ -1,0 +1,20 @@
+This is the solution of stage 20
+
+There is a setuid binary in the homedirectory that does
+the following: it makes a connection to localhost on the
+port you specify as a commandline argument.
+It then reads a line of text from the connection
+and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
+
+אנו רואים שהפעולה שהקובץ עושה זה לקרוא סיסמא מפורט מסוים. ואם הסיסמא זהה אז זה יחזיר את הסיסמא לשלב הבא
+כלומר קודם כל צריך לבחור פורט, ולשים בו את הסיסמא לשלב הזה.
+אנו יודעים כי ניתן לפתוח חיבור באמצעות הפקודה NC 
+בנוסף אנו צריכים להכניס לפורט הזה את הסיסמא ואז להעביר את התהליך לרקע על מנת שנוכ להשתמש בקובת של התרגיל
+
+1) echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l -p  4125 &
+2) ./suconnect 4125
+
+Password: 
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+

